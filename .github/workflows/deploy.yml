@@ -22,20 +22,9 @@ jobs:
     - name: Update packages
       run: sudo apt-get update
 
-    - name: Verify directory
-      run: ls
-
-    - name: Change to app directory
-      run: cd app/
-
-    - name: Verify directory
-      run: ls
-
     - name: Build with Maven
       run: mvn clean package
-
-    - name: Change back to the main directory
-      run: cd ..
+      working-directory: ./app
 
     - name: Build Docker image
       run: docker-compose build
