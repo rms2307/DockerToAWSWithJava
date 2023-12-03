@@ -25,6 +25,9 @@ jobs:
     - name: Change to app directory
       run: cd app/
 
+    - name: Verify directory
+      run: ls
+
     - name: Build with Maven
       run: mvn clean package
 
