@@ -1,0 +1,43 @@
+# Arquivos temporários
+*.class
+*.jar
+*.war
+*.ear
+*.hprof
+target/
+
+# Logs
+logs/
+*.log
+
+# Diretórios específicos do IDE
+.idea/
+.vscode/
+
+# Arquivos de configuração do Eclipse
+.classpath
+.project
+.settings/
+
+# Arquivos de configuração do IntelliJ
+*.iml
+*.iws
+*.ipr
+
+# Cache e arquivos de compilação do Maven
+target/
+mvnw
+mvnw.cmd
+.mvn/
+.m2/
+
+# Diretórios de build do Gradle
+.gradle/
+build/
+
+# Arquivos de configuração do Spring Boot
+application-*.yml
+application-*.properties
+
+# Arquivos de log do Spring Boot
+spring.log
